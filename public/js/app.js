@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
     response.json().then((data) => {
         if (data.error){
             messageOne.textContent = data.error
-            messageTwo.textContent = "Try Seoul"
+            messageTwo.textContent = "Try your current city name"
         } else{
             messageOne.textContent = data.location
             messageTwo.textContent = data.forecast

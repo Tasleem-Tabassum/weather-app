@@ -25,24 +25,24 @@ app.use(express.static(publicDirPath))
 app.get('', (req, res) => {
     res.render('index', {
         title : 'Weather',
-        name : 'me_elsa_t',
+        name : 'wandererearth',
         age : 21
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        link : 'https://ibighit.com/bts/eng/',
-        title : 'BTS',
-        name : 'me_elsa_t'
+        link : '',
+        title : 'Help page',
+        name : 'wandererearth'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title : 'About Jungkook',
+        title : 'About this app',
         tag : 'Baby',
-        name : 'me_elsa_t'
+        name : 'wandererearth'
     })
 })
 
@@ -95,7 +95,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title : '404',
-        name : 'me_elsa_t',
+        name : 'wandererearth',
         errorMessage : 'Help not found'
     })
 })
@@ -103,7 +103,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title : '404',
-        name : 'me_elsa_t',
+        name : 'wandererearth',
         errorMessage : 'Unavailable'
     })
 })
