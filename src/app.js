@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast.js')
 //to create a new instance of an application
 const app = express()
 
+const port = process.env.port || 3000
 //Define paths for express config
 const publicDirPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -108,6 +109,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Listening on port 3000 successfully...')
 })
