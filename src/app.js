@@ -41,7 +41,7 @@ app.get('/help', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title : 'About this app',
+        title : 'About Weather App',
         tag : 'Baby',
         name : 'wandererearth'
     })
